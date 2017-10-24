@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64F3B8F8B71461CEDF390FBF /* Pods_RECL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9B0E9C5BCC8666830FEEDF /* Pods_RECL.framework */; };
+		8482D0AB1F9E76F5000E17E8 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482D0AA1F9E76F5000E17E8 /* WebViewController.swift */; };
+		8482D0AD1F9F4D0B000E17E8 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482D0AC1F9F4D0B000E17E8 /* ProgressBarView.swift */; };
 		E2FCC0A81F4AF72B0040779E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCC0A71F4AF72B0040779E /* AppDelegate.swift */; };
 		E2FCC0AA1F4AF72B0040779E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FCC0A91F4AF72B0040779E /* ViewController.swift */; };
 		E2FCC0AD1F4AF72B0040779E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2FCC0AB1F4AF72B0040779E /* Main.storyboard */; };
@@ -15,6 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8177787478740BF63B079BE8 /* Pods-RECL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RECL.release.xcconfig"; path = "Pods/Target Support Files/Pods-RECL/Pods-RECL.release.xcconfig"; sourceTree = "<group>"; };
+		8482D0AA1F9E76F5000E17E8 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		8482D0AC1F9F4D0B000E17E8 /* ProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		8C9B0E9C5BCC8666830FEEDF /* Pods_RECL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RECL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C65B8D951D383849CDB940 /* Pods-RECL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RECL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RECL/Pods-RECL.debug.xcconfig"; sourceTree = "<group>"; };
 		E2FCC0A41F4AF72B0040779E /* RECL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RECL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2FCC0A71F4AF72B0040779E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2FCC0A91F4AF72B0040779E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64F3B8F8B71461CEDF390FBF /* Pods_RECL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		171884411F00250255F03C9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C9B0E9C5BCC8666830FEEDF /* Pods_RECL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DD61227BE3513F4CD62B63E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7C65B8D951D383849CDB940 /* Pods-RECL.debug.xcconfig */,
+				8177787478740BF63B079BE8 /* Pods-RECL.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E2FCC09B1F4AF72B0040779E = {
 			isa = PBXGroup;
 			children = (
 				E2FCC0A61F4AF72B0040779E /* RECL */,
 				E2FCC0A51F4AF72B0040779E /* Products */,
+				8DD61227BE3513F4CD62B63E /* Pods */,
+				171884411F00250255F03C9E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +82,14 @@
 		E2FCC0A61F4AF72B0040779E /* RECL */ = {
 			isa = PBXGroup;
 			children = (
+				8482D0AC1F9F4D0B000E17E8 /* ProgressBarView.swift */,
 				E2FCC0A71F4AF72B0040779E /* AppDelegate.swift */,
 				E2FCC0A91F4AF72B0040779E /* ViewController.swift */,
 				E2FCC0AB1F4AF72B0040779E /* Main.storyboard */,
 				E2FCC0AE1F4AF72B0040779E /* Assets.xcassets */,
 				E2FCC0B01F4AF72B0040779E /* LaunchScreen.storyboard */,
 				E2FCC0B31F4AF72B0040779E /* Info.plist */,
+				8482D0AA1F9E76F5000E17E8 /* WebViewController.swift */,
 			);
 			path = RECL;
 			sourceTree = "<group>";
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2FCC0B61F4AF72B0040779E /* Build configuration list for PBXNativeTarget "RECL" */;
 			buildPhases = (
+				1B4C53CA5F4CD6D8EEB8E2DC /* [CP] Check Pods Manifest.lock */,
 				E2FCC0A01F4AF72B0040779E /* Sources */,
 				E2FCC0A11F4AF72B0040779E /* Frameworks */,
 				E2FCC0A21F4AF72B0040779E /* Resources */,
+				FBED81E36BB69C06FE04F567 /* [CP] Embed Pods Frameworks */,
+				6FCB6839261A9247FEB76302 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +165,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B4C53CA5F4CD6D8EEB8E2DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RECL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FCB6839261A9247FEB76302 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RECL/Pods-RECL-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBED81E36BB69C06FE04F567 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RECL/Pods-RECL-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RECL/Pods-RECL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2FCC0A01F4AF72B0040779E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E2FCC0AA1F4AF72B0040779E /* ViewController.swift in Sources */,
+				8482D0AD1F9F4D0B000E17E8 /* ProgressBarView.swift in Sources */,
+				8482D0AB1F9E76F5000E17E8 /* WebViewController.swift in Sources */,
 				E2FCC0A81F4AF72B0040779E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +350,7 @@
 		};
 		E2FCC0B71F4AF72B0040779E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7C65B8D951D383849CDB940 /* Pods-RECL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Z8HU92LYAQ;
@@ -275,6 +365,7 @@
 		};
 		E2FCC0B81F4AF72B0040779E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8177787478740BF63B079BE8 /* Pods-RECL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Z8HU92LYAQ;
